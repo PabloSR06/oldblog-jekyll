@@ -17,4 +17,15 @@
 .fontlogo{
     font-family: 'Bad Script', cursive;
 }
+html, body{
+    height: 100%;
+    background-color: rgb(231, 231, 231);
+}
+.name{
+    font-size: 100px;
+    text-align: center;
 
+}
+.word{
+    font-size: 50px;
+}
