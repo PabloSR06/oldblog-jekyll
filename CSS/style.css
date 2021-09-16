@@ -29,3 +29,57 @@ html, body{
 .word{
     font-size: 50px;
 }
+
+
+/*Nav bar*/
+
+.nav_bar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+
+    background-color: #384149!important;
+    display: flex;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.brand_name{
+    color: #fff;
+    font-family: 'Bad Script', cursive;
+
+    font-size: 1.25rem;
+
+    padding-left: 2.5rem ;
+
+    text-decoration:  none;
+    display: inline-block;
+    white-space: nowrap;
+    line-height: inherit;
+
+}
+
+
+
+.nav_link_nav{
+    float: right;
+
+}
+.nav_link_ul, .nav_link_li{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+
+}
+.nav_link{
+    color: antiquewhite;
+    text-decoration: none;
+
+
+    display: block;
+    padding: .5rem 1rem;
+    border-radius: .25rem;
+}
