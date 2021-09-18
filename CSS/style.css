@@ -1,18 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
-
-@import url('/FONTS/Kalam-Regular.ttf');
-
-.divider {
-    height: 1.5rem;
-    background-color: rgba(0, 0, 0, .1);
-    border: solid rgba(0, 0, 0, .15);
-    border-width: 1px 0;
-    box-shadow: inset 0 0.5em 1.5em rgb(0 0 0 / 10%), inset 0 0.125em 0.5em rgb(0 0 0 / 15%);
+/* latin */
+@font-face {
+    font-family: 'Bad Script';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/FONTS/BadScript-Regular.ttf') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-.fontlogo{
-    font-family: 'Bad Script', cursive;
+
+
+:root{
 }
+
+
+
+
+
+
+
+
 html, body{
     height: 100%;
     background-color: rgb(231, 231, 231);
@@ -27,7 +34,7 @@ html, body{
 }
 
 
-/*Nav bar*/
+/*HEADER*/
 
 .header{
     margin-bottom: auto!important;
@@ -41,7 +48,6 @@ html, body{
     -webkit-box-direction: normal!important;
     -ms-flex-direction: column!important;
     flex-direction: column!important;
-    
 }
 
 .nav_bar{
@@ -51,15 +57,23 @@ html, body{
     left: 0;
     z-index: 1030;
 
-    background-color: #384149!important;
+    background-color: #f2f2f2;
+    box-shadow: 0 0 15px rgb(0 0 0 / 90%);
+    border-bottom-color: #f2f2f2;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+
     display: flex;
-    justify-content: space-between;
     -webkit-box-align: center;
     align-items: center;
+    justify-content: space-between;
+
+    
+    
 }
 
 .brand_name{
-    color: #fff;
+    color: blue;
     font-family: 'Bad Script', cursive;
     font-size: 1.25rem;
     padding-left: 2.5rem ;
@@ -73,12 +87,15 @@ html, body{
 .nav_link_nav{
     float: right;
 }
-.nav_link_ul, .nav_link_li{
+.nav_link_ul{
     text-decoration: none;
     list-style: none;
     display: flex;
 
+    margin-bottom: .8rem;
+    margin-top: .8rem;
 }
+  
 .nav_link{
     color: antiquewhite;
     text-decoration: none;
@@ -90,14 +107,24 @@ html, body{
     font-size: 15px;
 }
 .active{
-    background-color: rgb(81, 81, 245);
+    background-color: #D68A87;
 }
 .nav_link:hover{
     color: rgb(252, 52, 52);
 }
+/*END HEADER*/
 
 /*Footer*/
 .footer{
+    margin-top: auto;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 2.5rem;
+    
+}
+.footer2{
+    margin-left: 3rem;
+    margin-right: 3rem;
     display: flex;
     flex-wrap: wrap;
     justify-content:space-between;
@@ -106,12 +133,23 @@ html, body{
 .copy{
     font-family: Arial, Helvetica, sans-serif;
     align-items: center!important;
+    -webkit-box-align: center!important;
+    text-align: center;
 
 }
 .ext_url{
     list-style: none;
     display: flex;
+    margin-bottom: 0;
+    margin-top: 0;
 }
 .ext_url_link{
     padding-left: .5rem!important;
 }
+
+
+.divider{
+
+}
+
+/*END FOOTER*/
