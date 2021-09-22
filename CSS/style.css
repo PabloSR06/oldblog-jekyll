@@ -8,20 +8,17 @@
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 @font-face {
-    font-family: 'Roboto';
+    font-family: 'Stick No Bills';
     font-style: normal;
     font-weight: 300;
     font-display: swap;
-    src: url(/FONTS/Roboto-Regular.ttf) format('woff2');
+    src: url(https://fonts.gstatic.com/s/sticknobills/v1/bWts7ffXZwHuAa9Uld-oEK4QKlxj9f9t_7uEmjcV4cQLLbKx.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-  }
-
+}   
 
 :root{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Stick No Bills', sans-serif;
 }
-
-
 
 
 
@@ -69,8 +66,8 @@ html, body{
     z-index: 1030;
       
     box-shadow: 0 0 15px rgb(0 0 0 / 90%);
-    background-color: #A3A1A8;
-    border-bottom-color: #A3A1A8;
+    background-color: rgb(132, 131, 136);
+    border-bottom-color: rgb(132, 131, 136);
     border-bottom-width: 1px;
     border-bottom-style: solid;
     display: flex;
@@ -81,12 +78,13 @@ html, body{
 
 .brand_name{
     font-family: 'Bad Script', cursive;
-    font-size: 1.25rem;
+    font-size: 1.7rem;
     padding-left: 2.5rem ;
     text-decoration:  none;
     display: inline-block;
     white-space: nowrap;
     line-height: inherit;
+    color: white;
 }
 
 
@@ -97,7 +95,6 @@ html, body{
     text-decoration: none;
     list-style: none;
     display: flex;
-
     margin-bottom: .8rem;
     margin-top: .8rem;
 }

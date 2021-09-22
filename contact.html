@@ -13,6 +13,7 @@
 
     <!--CSS-->
     <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/form.css">
    
 </head>
 <body>
@@ -45,10 +46,27 @@
 
   <!--CENTER-->
   <div style="text-align: center;"> 
-    <!--NOME-->
-    <h1 class="name">PABLO SUÁREZ ROMERO</h1>
-    <!--CHANGING WORD-->
-    <p class="word">I'm <mark><span class="word" id="word"></span></mark></p>
+    <div class="form_box">
+      <form action="" class="form">
+        <h2 class="form_title">SEND A MESSAGE</h2>
+
+        <label for="name" class="form_name">Name *</label><br>
+        <input type="text" id="name" name="name" class="form_input" required><br>
+
+        <label for="subject" class="form_name">Subject</label><br>
+        <input type="text" id="subject" name="subject" class="form_input"><br>
+
+        <label for="mail" class="form_name">Mail</label><br>
+        <input type="text" id="mail" name="mail" class="form_input" required><br>
+
+        <label for="message" class="form_name">Mensaje *</label><br>
+        <textarea id="message" name="message" class="form_input" required></textarea><br>
+
+        <input type="submit" value="SEND" id="" class="form_btn">
+
+      </form>
+    </div>
+
   </div>
   <!--END CENTER-->
   
@@ -64,8 +82,8 @@
         <ul class="ext_url">
           <!--TWITTER-->
           <li class="ext_url_link">
-            <a href="https://twitter.com/pablosr06">
-              <img  width="24" height="24" src="/IMG/twitter.svg" alt="Twitter">
+            <a href="https://www.linkedin.com/in/pablo-su%C3%A1rez-980203199/">
+              <img  width="24" height="24" src="/IMG/linkedin.svg" alt="Twitter">
             </a>
           </li>
           
@@ -89,54 +107,6 @@
 
 
     <!-- JS -->
-    <!--Script for home animation-->
-    <script>
-      //TABLE WITH THE WORDS
-      var words = ['programer', 'dev', 'coder'];
-      //GET THE PART OF THE DOCUMENT WHERE IS THE ID 
-      var WordID = document.getElementById('word');
-      //GET WHAT IS WRITTEN IN THAT PART
-      var WordIDContent = WordID.innerHTML;
-      //REST OF VARIABLES
-      var NewWord = false;
-      var counter = 1;
-
-      setInterval(function(){
-        NewWord
-        WordIDContent
-        //IF THE WORD LENGTH IS MORE THAT 0 AND NEWWORD IS FALSE 
-        if(WordIDContent.length > 0 && !NewWord ) {
-          //WRITE THE WORD ONE BY ONE
-          WordID.innerHTML = WordIDContent.slice(0, -1);
-          WordIDContent = WordID.innerHTML;
-        } else {
-          //MAKE NEWWORD TRUE
-          NewWord = true;
-        }
-
-        //IF NEWWORD IS TRUE
-        if( NewWord ){
-          //IF THE WORD WRITTEN LENGTH IS LESS THAT THE WORD LENGTH USED
-          if( WordIDContent.length < words[counter].length  ) {
-            WordID.innerHTML = words[counter].slice(0, WordIDContent.length + 1);
-            WordIDContent = WordID.innerHTML;
-          } else {
-            //IF THE COUNTER HAS LESS NUMBER AS THE TABLE OF WORDS LENGTH
-            //ADD ONE TO THE COUNTER
-            if( counter < words.length) {
-              counter ++
-            }
-            NewWord = false;
-          }
-        }
-        //IF THE COUNTER HAS THE SAME NUMBER AS THE TABLE OF WORDS LENGTH
-        //SET THE COUNTER = 0 TO START AGAING
-        if( counter == words.length) {
-          counter = 0;
-        }
-        //TIME FOR EACH LOOP
-      }, 300);
-    </script>
    </div> 
 </body>
 </html>
