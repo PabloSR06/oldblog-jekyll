@@ -1,8 +1,7 @@
-/*
 .center{
     max-width: 1080px;  
     margin: 0 auto; 
-}*/
+}
 .work_box{
     width:325px;
     height: 500px;
@@ -27,4 +26,7 @@
 }
 .work_font{
     font-size: 20px;
+}
+h1{
+    font-size: 50px;
 }
