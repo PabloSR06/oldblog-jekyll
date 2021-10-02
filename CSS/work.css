@@ -1,0 +1,30 @@
+/*
+.center{
+    max-width: 1080px;  
+    margin: 0 auto; 
+}*/
+.work_box{
+    width:325px;
+    height: 500px;
+    margin: auto;
+    background: #fff;
+    border-radius: 10px;
+    overflow:hidden; 
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    margin-left: 20px;
+    margin-bottom: 25px;
+}
+.work_img{
+    width: 310px;
+    height: 300px;
+    margin: auto;
+    margin-top: 10px;
+    background: #fff;
+    border-radius: 10px;
+    overflow:hidden; 
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+.work_font{
+    font-size: 20px;
+}
