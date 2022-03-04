@@ -7,7 +7,7 @@ header:
     url: /archive.html
   - titles:
       # @start locale config
-      en      : &EN       Prueba
-      es      : &ES       Prueba
+      en      : &EN       Portfolio
+      es      : &ES       Portfolio
       # @end locale config
-    url: /pages/about
+    url: /pages/portfolio
