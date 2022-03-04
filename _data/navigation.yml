@@ -1,4 +1,10 @@
 header:
+- titles:
+      # @start locale config
+      en      : &EN       Posts
+      es      : &ES       Posts
+      # @end locale config
+    url: /pages/posts
   - titles:
       # @start locale config
       en      : &EN       Archive
@@ -11,3 +17,4 @@ header:
       es      : &ES       Portfolio
       # @end locale config
     url: /pages/portfolio
+  
