@@ -1,10 +1,6 @@
 ---
 layout: articles
-titles:
-  # @start locale config
-    en      : &EN       Posts
-    es      : &ES       Posts
-  # @end locale config
+title: Posts
 articles:
   data_source:  site.categories.posts
   show_cover: false

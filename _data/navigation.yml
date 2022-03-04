@@ -1,20 +1,8 @@
 header:
-- titles:
-      # @start locale config
-      en      : &EN       Posts
-      es      : &ES       Posts
-      # @end locale config
+  - title: Posts
     url: /pages/posts
-  - titles:
-      # @start locale config
-      en      : &EN       Archive
-      es      : &ES       Archivo
-      # @end locale config
+  - title: Archive
     url: /archive.html
-  - titles:
-      # @start locale config
-      en      : &EN       Portfolio
-      es      : &ES       Portfolio
-      # @end locale config
+  - title: Portfolio
     url: /pages/portfolio
   

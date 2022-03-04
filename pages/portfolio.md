@@ -1,10 +1,6 @@
 ---
 layout: articles
-titles:
-  # @start locale config
-  en      : &EN       Portfolio
-  es      : &ES       Portfolio
-  # @end locale config
+title: Portfolio
 articles:
   data_source:  site.categories.portfolio
   show_cover: true
