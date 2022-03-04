@@ -7,8 +7,7 @@ titles:
   # @end locale config
 articles:
   data_source:  site.categories.portfolio
-  article_type: BlogPosting
-  show_cover: false
+  show_cover: true
   show_excerpt: true
   show_readmore: true
   show_info: true
