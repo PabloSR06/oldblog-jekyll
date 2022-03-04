@@ -1,0 +1,13 @@
+header:
+  - titles:
+      # @start locale config
+      en      : &EN       Archive
+      es      : &ES       Archivo
+      # @end locale config
+    url: /archive.html
+  - titles:
+      # @start locale config
+      en      : &EN       Prueba
+      es      : &ES       Prueba
+      # @end locale config
+    url: /pages/about
