@@ -10,6 +10,7 @@ Here we are going to install the next tools:
 
 - AdoptOpenJDK
 - Eclipse for Java developers
+- Android Studio
 - Maven
 - Git
 - GitHub Desktop
@@ -37,7 +38,7 @@ choco install -y adoptopenjdk
 
 ## Install Eclipse for Java developers
 
-Install Eclipse for Java developers, it's going to be our IDE
+Install Eclipse for Java developers, it's going to be our IDE.
 
 You need to run **PowerShell** as Administrator and execute this comand:
 
@@ -45,6 +46,16 @@ You need to run **PowerShell** as Administrator and execute this comand:
 choco install -y eclipse-java-oxygen
 ```
 > If you add (`--version=2019.12`) with diferent numbers you will install an specific version of Eclipse.
+
+## Install Android Studio
+
+Android Studio to develop apps for android.
+
+You need to run **PowerShell** as Administrator and execute this comand:
+
+```powershell
+choco install -y androidstudio
+```
 
 ## Install Maven
 
