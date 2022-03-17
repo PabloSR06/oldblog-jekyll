@@ -15,6 +15,8 @@ Here we are going to install the next tools:
 - Git
 - GitHub Desktop
 
+
+
 ## Install Chocolatey
 
 We are going to install **Chocolatey** to install all of the tools.
@@ -24,6 +26,13 @@ You need to run **PowerShell** as Administrator and execute this comand:
 ```powershell
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 ```
+### Other notes
+
+In the commands I use `-y` that means you won't have to confirm.
+
+>One character switches can be bundled. e.g. -d (debug), -f (force), -v (verbose), and -y (confirm yes) can be bundled as -dfvy.
+
+
 
 ## Install AdoptOpenJDK
 
