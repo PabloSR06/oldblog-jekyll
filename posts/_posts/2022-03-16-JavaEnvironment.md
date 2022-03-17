@@ -3,7 +3,7 @@ title: How to prepare a Java development environment on Windows
 tags: Posts Java Windows
 ---
 
-How to quickly and easily prepare your Windows system for Java development.
+Quickly and easily prepare your Windows system for Java development.
 <!--more-->
 
 Here we are going to install the next tools:
