@@ -100,6 +100,14 @@
       </li>
     {%- endif -%}
 
+    {%- if _author.buymeacoffee -%}
+      <li title="{{ 'Buy me a coffee' }}">
+        <a class="button button--circle buymeacoffee-button" itemprop="sameAs" href="https://www.buymeacoffee.com/{{ _author.buymeacoffee }}" target="_blank">
+          <div class="icon">{%- include svg/icon/social/buymeacoffee.svg -%}</div>
+        </a>
+      </li>
+    {%- endif -%}
+
     {%- if _author.github -%}
       <li title="{{ _locale_string_follow | replace: '[NAME]', 'Github' }}">
         <a class="button button--circle github-button" itemprop="sameAs" href="https://github.com/{{ _author.github }}" target="_blank">
