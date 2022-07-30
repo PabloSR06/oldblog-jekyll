@@ -1,8 +1,8 @@
 ---
 layout: articles
-title: Portfolio
+title: Projects
 articles:
-  data_source:  site.categories.portfolio
+  data_source:  site.categories.projects
   show_cover: true
   show_excerpt: true
   show_readmore: true

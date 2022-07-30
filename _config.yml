@@ -216,7 +216,7 @@ defaults:
 
 feed:
   categories:
-    - portfolio
+    - projects
     - posts
     
 

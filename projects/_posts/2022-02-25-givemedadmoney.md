@@ -1,7 +1,7 @@
 ---
 title: GiveMeDadMoney 
-tags: Portfolio Java
-cover: /assets/images/portfolio/givemedadmoney/logo.png
+tags: Projects Java
+cover: /assets/images/projects/givemedadmoney/logo.png
 ---
 
 Casino y salón recreativo virtual, aplicación con JavaFX para la asignatura DAD.
