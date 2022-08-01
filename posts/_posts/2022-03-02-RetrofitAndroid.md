@@ -1,6 +1,7 @@
 ---
 title: Retrofit Android
 tags: Posts Android Java
+comment: true
 ---
 
 When you call an api using retrofit using .execute() in Android it will throw an error **'android.os.NetworkOnMainThreadException'**.
