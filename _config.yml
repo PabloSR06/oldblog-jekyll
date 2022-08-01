@@ -56,8 +56,8 @@ author:
 
 ## => GitHub Repository (if the site is hosted by GitHub)
 ##############################
-repository: user_name/repo_name
-repository_tree: master
+repository: PabloSR06/pablosr06.github.io
+repository_tree: gh-pages
 
 
 ## => Paths
@@ -216,7 +216,7 @@ defaults:
 
 feed:
   categories:
-    - portfolio
+    - projects
     - posts
     
 
@@ -228,3 +228,4 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jemoji
+  - "jekyll-github-metadata"

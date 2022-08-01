@@ -3,6 +3,6 @@ header:
     url: /pages/posts
   - title: Archive
     url: /archive.html
-  - title: Portfolio
-    url: /pages/portfolio
+  - title: Projects
+    url: /pages/projects
   
