@@ -1,1 +1,1 @@
-Sitemap: http://pablosr06.github.io/sitemap.xml
+Sitemap: pablosr06.github.io/sitemap.xml
