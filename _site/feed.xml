@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-08-03T17:56:44+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Pablo Suarez</title><subtitle>Your Site Description
+</subtitle><author><name>Pablo Suarez</name></author><entry><title type="html">How to write descent commits</title><link href="http://localhost:4000/posts/2022/08/02/writecommits.html" rel="alternate" type="text/html" title="How to write descent commits" /><published>2022-08-02T00:00:00+01:00</published><updated>2022-08-02T00:00:00+01:00</updated><id>http://localhost:4000/posts/2022/08/02/writecommits</id><content type="html" xml:base="http://localhost:4000/posts/2022/08/02/writecommits.html">&lt;p&gt;Git is software for tracking changes in any set of files, where each commit means a change. For a better control of your changes, you need a better description. Let’s see the best way to write. commits&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;Recently I’ve been curious about git, and how to write a good commit message. Since my previous commits were something like “change style” or “changes”, I wanted the best way to do it.&lt;/p&gt;
+
+&lt;p&gt;I’m sure there are a hundred different ways to write commits, at the end it’s a choice, or if you are working as a team it is better doing it all the same way.&lt;/p&gt;
+
+&lt;p&gt;Some of the characteristic are:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The length of an ideal commit should not be bigger than 50.&lt;/li&gt;
+  &lt;li&gt;Being efficient and coherent with the information.&lt;/li&gt;
+  &lt;li&gt;Some say that you have to capitalize the first word and write the rest all lowercase.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;type&amp;gt;&amp;lt;comment&amp;gt;
+
+DOCS: add readme
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This is some types of commits:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TEST&lt;/code&gt; – Including new tests or correcting previous.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;FIX&lt;/code&gt; – Fix a bug or performance improvements.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;FEAT&lt;/code&gt; – A new feature.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CHORE&lt;/code&gt; - Update of dependencies.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;REVERT&lt;/code&gt; – Reverts a previous commit.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DOCS&lt;/code&gt; – Changes in the documentation.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;REFACTOR&lt;/code&gt; – Refactoring code, renaming a variable…&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;REMOVE&lt;/code&gt; - Deleting functions or assets.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;WIP&lt;/code&gt; - Work In Progress.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;PERF&lt;/code&gt; - Performance improvements.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MERGE&lt;/code&gt; - Join two different branches.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br /&gt;
+With all these types, your commits will have enough information and anyone who sees it can easily understand the changes even if they are not related to the project. 
+Knowing how to write good commits is a good start, the next step is document the project, and especially your code.&lt;/p&gt;</content><author><name>Pablo Suarez</name></author><category term="posts" /><category term="Posts" /><category term="Git" /><category term="Develoment" /><category term="Github" /><summary type="html">Git is software for tracking changes in any set of files, where each commit means a change. For a better control of your changes, you need a better description. Let’s see the best way to write. commits</summary></entry><entry><title type="html">AZURE AD Obtaining OAuth Token</title><link href="http://localhost:4000/posts/2022/04/30/AzureADOAuth.html" rel="alternate" type="text/html" title="AZURE AD Obtaining OAuth Token" /><published>2022-04-30T00:00:00+01:00</published><updated>2022-04-30T00:00:00+01:00</updated><id>http://localhost:4000/posts/2022/04/30/AzureADOAuth</id><content type="html" xml:base="http://localhost:4000/posts/2022/04/30/AzureADOAuth.html">&lt;p&gt;How to connect your C# code with Azure AD (Azure Active Directory) application for use as role-based access control.
+&lt;!--more--&gt;&lt;/p&gt;
+
+&lt;p&gt;Here some docs from microsoft:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal&quot;&gt;How to create a new Azure AD&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/power-platform/admin/manage-application-users&quot;&gt;How to manage users in the Power Platform admin center&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;At this point you should have an Azure AD application with a Client Secret and a powerapps environment with the application user.&lt;/p&gt;
+
+&lt;h3 id=&quot;requirements&quot;&gt;Requirements&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;/assets/images/posts/AzureADOAuth/secretid.png&quot;&gt;ClientSecret (Azure AD)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/assets/images/posts/AzureADOAuth/clientid.png&quot;&gt;ClientID (Azure AD)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;URL (PowerApps Developer Options)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/assets/images/posts/AzureADOAuth/clientid.png&quot;&gt;TenantID (Azure AD)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Be careful with this keys, don’t share or push into your repository this information&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;obtaining-oauth-token&quot;&gt;Obtaining OAuth Token&lt;/h3&gt;
+&lt;p&gt;By using &lt;a href=&quot;https://docs.microsoft.com/en-us/dotnet/api/microsoft.identitymodel.clients.activedirectory?view=azure-dotnet&quot;&gt;Microsoft.IdentityModel.Clients.ActiveDirectory Namespace&lt;/a&gt;  you get an authentication token that you can use to identify your app to access your API without login manually with your credentials.&lt;/p&gt;
+
+&lt;div class=&quot;language-c# highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;AuthenticationContext&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;authContext&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;AuthenticationContext&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;https://login.microsoftonline.com/&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;TenatID&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;);&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;ClientCredential&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;credential&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;ClientCredential&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ClientID&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ClientSecret&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;);&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;AuthenticationResult&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;authContext&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;AcquireTokenAsync&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;AzureDetails&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;credential&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Pablo Suarez</name></author><category term="posts" /><category term="Posts" /><category term="C#" /><category term="Microsoft" /><category term="AzureAD" /><summary type="html">How to connect your C# code with Azure AD (Azure Active Directory) application for use as role-based access control.</summary></entry><entry><title type="html">How to prepare a Java development environment on Windows</title><link href="http://localhost:4000/posts/2022/03/16/JavaEnvironment.html" rel="alternate" type="text/html" title="How to prepare a Java development environment on Windows" /><published>2022-03-16T00:00:00+00:00</published><updated>2022-03-16T00:00:00+00:00</updated><id>http://localhost:4000/posts/2022/03/16/JavaEnvironment</id><content type="html" xml:base="http://localhost:4000/posts/2022/03/16/JavaEnvironment.html">&lt;p&gt;Quickly and easily prepare your Windows system for Java development.
+&lt;!--more--&gt;&lt;/p&gt;
+
+&lt;p&gt;Here we are going to install the next tools:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;AdoptOpenJDK&lt;/li&gt;
+  &lt;li&gt;Eclipse for Java developers&lt;/li&gt;
+  &lt;li&gt;Android Studio&lt;/li&gt;
+  &lt;li&gt;Maven&lt;/li&gt;
+  &lt;li&gt;Git&lt;/li&gt;
+  &lt;li&gt;GitHub Desktop&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;install-chocolatey&quot;&gt;Install Chocolatey&lt;/h2&gt;
+
+&lt;p&gt;We are going to install &lt;strong&gt;Chocolatey&lt;/strong&gt; to install all of the tools.&lt;/p&gt;
+
+&lt;p&gt;You need to run &lt;strong&gt;PowerShell&lt;/strong&gt; as Administrator and execute this comand:&lt;/p&gt;
+
+&lt;div class=&quot;language-powershell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;Set-ExecutionPolicy&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Bypass&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-Scope&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Process&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-Force&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;System.Net.ServicePointManager&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SecurityProtocol&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;System.Net.ServicePointManager&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]::&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SecurityProtocol&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-bor&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;3072&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;iex&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;New-Object&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;System.Net.WebClient&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;DownloadString&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'https://community.chocolatey.org/install.ps1'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h3 id=&quot;other-notes&quot;&gt;Other notes&lt;/h3&gt;
+
+&lt;p&gt;In the commands I use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-y&lt;/code&gt; that means you won’t have to confirm.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;One character switches can be bundled. e.g. -d (debug), -f (force), -v (verbose), and -y (confirm yes) can be bundled as -dfvy.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;install-adoptopenjdk&quot;&gt;Install AdoptOpenJDK&lt;/h2&gt;
+
+&lt;p&gt;Install the Java Development Kit (JDK), you need it to code in Java.&lt;/p&gt;
+
+&lt;p&gt;You need to run &lt;strong&gt;PowerShell&lt;/strong&gt; as Administrator and execute this comand:&lt;/p&gt;
+
+&lt;div class=&quot;language-powershell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;choco&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;install&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-y&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;adoptopenjdk&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;If you add a numer next to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;adoptopenjdk&lt;/code&gt; like &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;adoptopenjdk14&lt;/code&gt; you will install that specific version.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;install-eclipse-for-java-developers&quot;&gt;Install Eclipse for Java developers&lt;/h2&gt;
+
+&lt;p&gt;Install Eclipse for Java developers, it’s going to be our IDE.&lt;/p&gt;
+
+&lt;p&gt;You need to run &lt;strong&gt;PowerShell&lt;/strong&gt; as Administrator and execute this comand:&lt;/p&gt;
+
+&lt;div class=&quot;language-powershell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;choco&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;install&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-y&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;eclipse-java-oxygen&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;If you add (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--version=2019.12&lt;/code&gt;) with diferent numbers you will install an specific version of Eclipse.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;install-android-studio&quot;&gt;Install Android Studio&lt;/h2&gt;
+
+&lt;p&gt;Android Studio to develop apps for android.&lt;/p&gt;
+
+&lt;p&gt;You need to run &lt;strong&gt;PowerShell&lt;/strong&gt; as Administrator and execute this comand:&lt;/p&gt;
+
+&lt;div class=&quot;language-powershell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;choco&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;install&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-y&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;androidstudio&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;install-maven&quot;&gt;Install Maven&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Maven&lt;/strong&gt; it’s a building proyect’s tool for Java.&lt;/p&gt;
+
+&lt;p&gt;You need to run &lt;strong&gt;PowerShell&lt;/strong&gt; as Administrator and execute this comand:&lt;/p&gt;
+
+&lt;div class=&quot;language-powershell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;choco&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;install&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-y&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;maven&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;install-git&quot;&gt;Install Git&lt;/h2&gt;
+
+&lt;p&gt;Install &lt;strong&gt;Git&lt;/strong&gt; to have the command &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git&lt;/code&gt; in the command line.&lt;/p&gt;
+
+&lt;p&gt;You need to run &lt;strong&gt;PowerShell&lt;/strong&gt; as Administrator and execute this comand:&lt;/p&gt;
+
+&lt;div class=&quot;language-powershell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;choco&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;install&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-y&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;git&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;install-github-desktop&quot;&gt;Install GitHub Desktop&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;GitHub Desktop&lt;/strong&gt;, it’s the interface to control more easily the GitHub repositories.&lt;/p&gt;
+
+&lt;p&gt;You need to run &lt;strong&gt;PowerShell&lt;/strong&gt; as Administrator and execute this comand:&lt;/p&gt;
+
+&lt;div class=&quot;language-powershell highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;choco&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;install&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-y&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;github-desktop&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://chocolatey.org/install&quot;&gt;Installing Chocolatey&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://chocolatey.org/packages&quot;&gt;Chocolatey packages gallery&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.eclipse.org/downloads/&quot;&gt;Eclipse downloads page&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://desktop.github.com/&quot;&gt;GitHub Desktop&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://git-scm.com/&quot;&gt;Oficial Git website&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;For more information in other operative system you can check &lt;a href=&quot;https://dam-dad.github.io/entorno/java/&quot;&gt;THIS&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;</content><author><name>Pablo Suarez</name></author><category term="posts" /><category term="Posts" /><category term="Java" /><category term="Windows" /><summary type="html">Quickly and easily prepare your Windows system for Java development.</summary></entry><entry><title type="html">DBDPerks</title><link href="http://localhost:4000/projects/2022/03/15/DBDPerks.html" rel="alternate" type="text/html" title="DBDPerks" /><published>2022-03-15T00:00:00+00:00</published><updated>2022-03-15T00:00:00+00:00</updated><id>http://localhost:4000/projects/2022/03/15/DBDPerks</id><content type="html" xml:base="http://localhost:4000/projects/2022/03/15/DBDPerks.html">&lt;p&gt;Dead by Daylight app, you can create a share custom builds using the perks of the game.&lt;/p&gt;
+
+&lt;!--more--&gt;</content><author><name>Pablo Suarez</name></author><category term="projects" /><category term="Projects" /><category term="Java" /><summary type="html">Dead by Daylight app, you can create a share custom builds using the perks of the game.</summary></entry><entry><title type="html">EasyGas</title><link href="http://localhost:4000/projects/2022/03/05/easygas.html" rel="alternate" type="text/html" title="EasyGas" /><published>2022-03-05T00:00:00+00:00</published><updated>2022-03-05T00:00:00+00:00</updated><id>http://localhost:4000/projects/2022/03/05/easygas</id><content type="html" xml:base="http://localhost:4000/projects/2022/03/05/easygas.html">&lt;p&gt;EasyGas it’s a page to see the prices of the fuel in Spain, it’s going to be in an android APP, you can find that repository in &lt;a href=&quot;https://github.com/PabloSR06/EasyGas_Android&quot;&gt;HERE&lt;/a&gt; and the web in &lt;a href=&quot;https://github.com/PabloSR06/EasyGas&quot;&gt;this repository&lt;/a&gt; .&lt;/p&gt;
+
+&lt;!--more--&gt;</content><author><name>Pablo Suarez</name></author><category term="projects" /><category term="Projects" /><category term="Web" /><category term="PHP" /><category term="Java" /><summary type="html">EasyGas it’s a page to see the prices of the fuel in Spain, it’s going to be in an android APP, you can find that repository in HERE and the web in this repository .</summary></entry><entry><title type="html">Retrofit Android</title><link href="http://localhost:4000/posts/2022/03/02/RetrofitAndroid.html" rel="alternate" type="text/html" title="Retrofit Android" /><published>2022-03-02T00:00:00+00:00</published><updated>2022-03-02T00:00:00+00:00</updated><id>http://localhost:4000/posts/2022/03/02/RetrofitAndroid</id><content type="html" xml:base="http://localhost:4000/posts/2022/03/02/RetrofitAndroid.html">&lt;p&gt;When you call an api using retrofit using .execute() in Android it will throw an error &lt;strong&gt;‘android.os.NetworkOnMainThreadException’&lt;/strong&gt;.
+&lt;!--more--&gt;&lt;/p&gt;
+
+&lt;p&gt;To fix this problem you can one of two things and of course you have to add in the android manifest.xml file.&lt;/p&gt;
+&lt;div class=&quot;language-xml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;uses-permission&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;android:name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;android.permission.INTERNET&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;change-execute-for-enqueue&quot;&gt;Change .execute() for .enqueue()&lt;/h3&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;MyClient&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;api&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ServiceGenerator&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;createService&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;MyClient&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;Call&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;MyItem&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;call&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;api&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getMyItem&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;param1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;param2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;param3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;call&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;enqueue&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Callback&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;MyItem&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nd&quot;&gt;@Override&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;onResponse&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Call&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;MyItem&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;call&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Response&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;MyItem&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nc&quot;&gt;MyItem&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myItem&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;nd&quot;&gt;@Override&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;onFailure&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Call&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;MyItem&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;call&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Throwable&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;//Handle failure&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;});&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;You will got the response of the call in the onResponce function.&lt;/p&gt;
+
+&lt;h3 id=&quot;create-an-async-task-or-a-thread&quot;&gt;Create an async task or a thread.&lt;/h3&gt;
+
+&lt;p&gt;If you are using .execute() in the call, you will need to use a thread.&lt;/p&gt;</content><author><name>Pablo Suarez</name></author><category term="posts" /><category term="Posts" /><category term="Android" /><category term="Java" /><summary type="html">When you call an api using retrofit using .execute() in Android it will throw an error ‘android.os.NetworkOnMainThreadException’.</summary></entry><entry><title type="html">GiveMeDadMoney</title><link href="http://localhost:4000/projects/2022/02/25/givemedadmoney.html" rel="alternate" type="text/html" title="GiveMeDadMoney" /><published>2022-02-25T00:00:00+00:00</published><updated>2022-02-25T00:00:00+00:00</updated><id>http://localhost:4000/projects/2022/02/25/givemedadmoney</id><content type="html" xml:base="http://localhost:4000/projects/2022/02/25/givemedadmoney.html">&lt;p&gt;Casino y salón recreativo virtual, aplicación con JavaFX para la asignatura DAD.
+&lt;!--more--&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/47283527/155526881-de0741ad-02fb-4403-89b5-d9615998e907.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;indice&quot;&gt;Indice&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#instalación&quot;&gt;Instalación&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#wiki&quot;&gt;Wiki&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#autores&quot;&gt;Autores&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#licencia&quot;&gt;Licencia&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;instalación&quot;&gt;Instalación&lt;/h2&gt;
+
+&lt;p&gt;Podras acceder al instalador dandole a &lt;a href=&quot;https://github.com/dam-dad/GiveMeDadMoney/releases&quot;&gt;Instalador&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Le damos a descargar el archivo GiveMeDADMoney.exe o lo que queramos descargar.&lt;/p&gt;
+
+&lt;p&gt;Una vez descargado lo iniciamos y escogemos el idioma&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/90903717/155432303-4e1ba331-4ab6-4304-90ac-a7a294a94ca3.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Una vez hecho lo anterior se pasa a las Licencias de uso, las cuales tenemos que aceptar si quieremos continuar&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/90903717/155432418-74bc3675-0769-4ba7-af31-9b3951c46927.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Una vez aceptada las licencias nos sale una ventana que nos dice si queremos crear un acceso directo en nuestro escritorio
+En caso de que se quiera habría que acceptar el cuadrado en el medio&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/90903717/155432546-18ae3fae-6143-4268-8c53-296da1212e71.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Y para terminar aceptamos la siguiente ventana y ya se estaría instalando el juego&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://user-images.githubusercontent.com/90903717/155432675-a708ce0f-916d-4d7b-b147-17d55557d315.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;¡A jugar!&lt;/p&gt;
+
+&lt;h2 id=&quot;wiki&quot;&gt;Wiki&lt;/h2&gt;
+&lt;p&gt;Para acceder a nuestra guia de como usar nuestra aplicación puedes acceder directamente desde aqui &lt;a href=&quot;https://github.com/dam-dad/GiveMeDadMoney/wiki&quot;&gt;WIKI&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;O puedes ir directamente a la guia que deseas ver:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/dam-dad/GiveMeDadMoney/wiki/Cube-Tower&quot;&gt;Cube Tower&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/dam-dad/GiveMeDadMoney/wiki/MayorOMenor&quot;&gt;Mayor O Menor&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/dam-dad/GiveMeDadMoney/wiki/Tragaperras&quot;&gt;Tragaperras&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/dam-dad/GiveMeDadMoney/wiki/Store&quot;&gt;Tienda&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;autores&quot;&gt;Autores&lt;/h2&gt;
+
+&lt;p&gt;​		Los integrantes del equipo encargados de desarrollar GiveMeDadMoney:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/PabloSR06&quot;&gt;Pablo Suarez Romero&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/Diego04012002&quot;&gt;Diego Alejandro Garcia Deus&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/dalextf&quot;&gt;David Alexander González Suárez&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/AlejandroHP96&quot;&gt;Alejandro Herrera Pestana&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;bibliografía&quot;&gt;Bibliografía&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/fvarrui/JavaPackager&quot;&gt;JavaPackager&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/dam-dad/JasperReports&quot;&gt;JasperReport&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://mvnrepository.com/artifact/org.openjfx&quot;&gt;OpenJFX&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://mvnrepository.com/artifact/jakarta.xml.bind&quot;&gt;Jakarta XML Bind&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://mvnrepository.com/artifact/com.sun.xml.bind&quot;&gt;Sun XML Bind&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://soundcloud.com/misteredge&quot;&gt;Música&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;licencia&quot;&gt;Licencia&lt;/h2&gt;
+
+&lt;p&gt;GNU General Public License v3.0&lt;/p&gt;</content><author><name>Pablo Suarez</name></author><category term="projects" /><category term="Projects" /><category term="Java" /><summary type="html">Casino y salón recreativo virtual, aplicación con JavaFX para la asignatura DAD.</summary></entry></feed>
