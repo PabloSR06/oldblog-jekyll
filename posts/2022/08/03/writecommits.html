@@ -1,10 +1,10 @@
 <!DOCTYPE html><html lang="en">
   <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><title>AZURE AD Obtaining OAuth Token - Pablo Suarez</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><title>How to write descent commits - Pablo Suarez</title>
 
-<meta name="description" content="How to connect your C# code with Azure AD (Azure Active Directory) application for use as role-based access control.">
-<link rel="canonical" href="http://localhost:4000/posts/2022/04/30/AzureADOAuth.html"><link rel="alternate" type="application/rss+xml" title="Pablo Suarez" href="/feed.xml"><!-- start favicons snippet, use https://realfavicongenerator.net/ --><link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png"><link rel="manifest" href="/assets/site.webmanifest"><link rel="mask-icon" href="/assets/safari-pinned-tab.svg" color="#5bbad5"><link rel="shortcut icon" href="/assets/favicon.ico">
+<meta name="description" content="Git is software for tracking changes in any set of files, where each commit means a change. For a better control of your changes, you need a better descripti...">
+<link rel="canonical" href="http://localhost:4000/posts/2022/08/03/writecommits.html"><link rel="alternate" type="application/rss+xml" title="Pablo Suarez" href="/feed.xml"><!-- start favicons snippet, use https://realfavicongenerator.net/ --><link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png"><link rel="manifest" href="/assets/site.webmanifest"><link rel="mask-icon" href="/assets/safari-pinned-tab.svg" color="#5bbad5"><link rel="shortcut icon" href="/assets/favicon.ico">
 
 <meta name="msapplication-TileColor" content="#da532c"><meta name="msapplication-config" content="/assets/browserconfig.xml">
 
@@ -295,62 +295,69 @@ fill="#000000" stroke="none">
               <div class="col-main cell cell--auto"><!-- start custom main top snippet -->
 
 <!-- end custom main top snippet -->
-<article itemscope itemtype="http://schema.org/Article"><div class="article__header"><header><h1>AZURE AD Obtaining OAuth Token</h1></header></div><meta itemprop="headline" content="AZURE AD Obtaining OAuth Token"><div class="article__info clearfix"><ul class="left-col menu"><li>
+<article itemscope itemtype="http://schema.org/Article"><div class="article__header"><header><h1>How to write descent commits</h1></header></div><meta itemprop="headline" content="How to write descent commits"><div class="article__info clearfix"><ul class="left-col menu"><li>
               <a class="button button--secondary button--pill button--sm"
                 href="/archive.html?tag=Posts">Posts</a>
             </li><li>
               <a class="button button--secondary button--pill button--sm"
-                href="/archive.html?tag=C%23">C#</a>
+                href="/archive.html?tag=Git">Git</a>
             </li><li>
               <a class="button button--secondary button--pill button--sm"
-                href="/archive.html?tag=Microsoft">Microsoft</a>
+                href="/archive.html?tag=Develoment">Develoment</a>
             </li><li>
               <a class="button button--secondary button--pill button--sm"
-                href="/archive.html?tag=AzureAD">AzureAD</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Apr 30, 2022</span>
-            </li></ul></div><meta itemprop="author" content="Pablo Suarez"/><meta itemprop="datePublished" content="2022-04-30T00:00:00+01:00">
-    <meta itemprop="keywords" content="Posts,C#,Microsoft,AzureAD"><div class="js-article-content"><div class="layout--article"><!-- start custom article top snippet -->
+                href="/archive.html?tag=Github">Github</a>
+            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Aug 03, 2022</span>
+            </li></ul></div><meta itemprop="author" content="Pablo Suarez"/><meta itemprop="datePublished" content="2022-08-03T00:00:00+01:00">
+    <meta itemprop="keywords" content="Posts,Git,Develoment,Github"><div class="js-article-content"><div class="layout--article"><!-- start custom article top snippet -->
 
 <!-- end custom article top snippet -->
-<div class="article__content" itemprop="articleBody"><p>How to connect your C# code with Azure AD (Azure Active Directory) application for use as role-based access control.
-<!--more--></p>
+<div class="article__content" itemprop="articleBody"><p>Git is software for tracking changes in any set of files, where each commit means a change. For a better control of your changes, you need a better description. Let’s see the best way to write. commits</p>
 
-<p>Here some docs from microsoft:</p>
+<!--more-->
+
+<p>Recently I’ve been curious about git, and how to write a good commit message. Since my previous commits were something like “change style” or “changes”, I wanted the best way to do it.</p>
+
+<p>I’m sure there are a hundred different ways to write commits, at the end it’s a choice, or if you are working as a team it is better doing it all the same way.</p>
+
+<p>Some of the characteristic are:</p>
 
 <ul>
-  <li><a href="https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal">How to create a new Azure AD</a></li>
-  <li><a href="https://docs.microsoft.com/en-us/power-platform/admin/manage-application-users">How to manage users in the Power Platform admin center</a></li>
+  <li>The length of an ideal commit should not be bigger than 50.</li>
+  <li>Being efficient and coherent with the information.</li>
+  <li>Some say that you have to capitalize the first word and write the rest all lowercase.</li>
 </ul>
 
-<p>At this point you should have an Azure AD application with a Client Secret and a powerapps environment with the application user.</p>
+<p>Example:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;type&gt;&lt;comment&gt;
 
-<h3 id="requirements">Requirements</h3>
-<ul>
-  <li><a href="/assets/images/posts/AzureADOAuth/secretid.png">ClientSecret (Azure AD)</a></li>
-  <li><a href="/assets/images/posts/AzureADOAuth/clientid.png">ClientID (Azure AD)</a></li>
-  <li>URL (PowerApps Developer Options)</li>
-  <li><a href="/assets/images/posts/AzureADOAuth/clientid.png">TenantID (Azure AD)</a></li>
-</ul>
-
-<blockquote>
-  <p><strong>Be careful with this keys, don’t share or push into your repository this information</strong></p>
-</blockquote>
-
-<h3 id="obtaining-oauth-token">Obtaining OAuth Token</h3>
-<p>By using <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.identitymodel.clients.activedirectory?view=azure-dotnet">Microsoft.IdentityModel.Clients.ActiveDirectory Namespace</a>  you get an authentication token that you can use to identify your app to access your API without login manually with your credentials.</p>
-
-<div class="language-c# highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">AuthenticationContext</span> <span class="n">authContext</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">AuthenticationContext</span><span class="p">(</span><span class="s">"https://login.microsoftonline.com/"</span> <span class="p">+</span> <span class="p">&lt;</span><span class="n">TenatID</span><span class="p">&gt;);</span>
-<span class="n">ClientCredential</span> <span class="n">credential</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">ClientCredential</span><span class="p">(&lt;</span><span class="n">ClientID</span><span class="p">,</span> <span class="p">&lt;</span><span class="n">ClientSecret</span><span class="p">&gt;);</span>
-
-<span class="n">AuthenticationResult</span> <span class="n">result</span> <span class="p">=</span> <span class="n">authContext</span><span class="p">.</span><span class="nf">AcquireTokenAsync</span><span class="p">(</span><span class="n">AzureDetails</span><span class="p">.</span><span class="n">url</span><span class="p">,</span> <span class="n">credential</span><span class="p">).</span><span class="n">Result</span><span class="p">;</span>
-<span class="p">});</span>
+DOCS: add readme
 </code></pre></div></div>
 
-</div><section class="article__sharing d-print-none"></section><div class="d-print-none"><footer class="article__footer"><meta itemprop="dateModified" content="2022-04-30T00:00:00+01:00"><!-- start custom article footer snippet -->
+<p>This is some types of commits:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">TEST</code> – Including new tests or correcting previous.</li>
+  <li><code class="language-plaintext highlighter-rouge">FIX</code> – Fix a bug or performance improvements.</li>
+  <li><code class="language-plaintext highlighter-rouge">FEAT</code> – A new feature.</li>
+  <li><code class="language-plaintext highlighter-rouge">CHORE</code> - Update of dependencies.</li>
+  <li><code class="language-plaintext highlighter-rouge">REVERT</code> – Reverts a previous commit.</li>
+  <li><code class="language-plaintext highlighter-rouge">DOCS</code> – Changes in the documentation.</li>
+  <li><code class="language-plaintext highlighter-rouge">REFACTOR</code> – Refactoring code, renaming a variable…</li>
+  <li><code class="language-plaintext highlighter-rouge">REMOVE</code> - Deleting functions or assets.</li>
+  <li><code class="language-plaintext highlighter-rouge">WIP</code> - Work In Progress.</li>
+  <li><code class="language-plaintext highlighter-rouge">PERF</code> - Performance improvements.</li>
+  <li><code class="language-plaintext highlighter-rouge">MERGE</code> - Join two different branches.</li>
+</ul>
+
+<p><br />
+With all these types, your commits will have enough information and anyone who sees it can easily understand the changes even if they are not related to the project. 
+Knowing how to write good commits is a good start, the next step is document the project, and especially your code.</p>
+</div><section class="article__sharing d-print-none"></section><div class="d-print-none"><footer class="article__footer"><meta itemprop="dateModified" content="2022-08-03T00:00:00+01:00"><!-- start custom article footer snippet -->
 
 <!-- end custom article footer snippet -->
 </footer>
-<div class="article__section-navigator clearfix"><div class="previous"><span>PREVIOUS</span><a href="/posts/2022/03/16/JavaEnvironment.html">How to prepare a Java development environment on Windows</a></div><div class="next"><span>NEXT</span><a href="/projects/2022/07/04/distressapp.html">DistressApp</a></div></div></div>
+<div class="article__section-navigator clearfix"><div class="previous"><span>PREVIOUS</span><a href="/projects/2022/07/04/distressapp.html">DistressApp</a></div></div></div>
 
 </div>
 

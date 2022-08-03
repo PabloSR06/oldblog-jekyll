@@ -1,10 +1,10 @@
 <!DOCTYPE html><html lang="en">
   <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><title>AZURE AD Obtaining OAuth Token - Pablo Suarez</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"><title>DistressApp - Pablo Suarez</title>
 
-<meta name="description" content="How to connect your C# code with Azure AD (Azure Active Directory) application for use as role-based access control.">
-<link rel="canonical" href="http://localhost:4000/posts/2022/04/30/AzureADOAuth.html"><link rel="alternate" type="application/rss+xml" title="Pablo Suarez" href="/feed.xml"><!-- start favicons snippet, use https://realfavicongenerator.net/ --><link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png"><link rel="manifest" href="/assets/site.webmanifest"><link rel="mask-icon" href="/assets/safari-pinned-tab.svg" color="#5bbad5"><link rel="shortcut icon" href="/assets/favicon.ico">
+<meta name="description" content="Application to send emergency message on button click .">
+<link rel="canonical" href="http://localhost:4000/projects/2022/07/04/distressapp.html"><link rel="alternate" type="application/rss+xml" title="Pablo Suarez" href="/feed.xml"><!-- start favicons snippet, use https://realfavicongenerator.net/ --><link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png"><link rel="manifest" href="/assets/site.webmanifest"><link rel="mask-icon" href="/assets/safari-pinned-tab.svg" color="#5bbad5"><link rel="shortcut icon" href="/assets/favicon.ico">
 
 <meta name="msapplication-TileColor" content="#da532c"><meta name="msapplication-config" content="/assets/browserconfig.xml">
 
@@ -295,62 +295,62 @@ fill="#000000" stroke="none">
               <div class="col-main cell cell--auto"><!-- start custom main top snippet -->
 
 <!-- end custom main top snippet -->
-<article itemscope itemtype="http://schema.org/Article"><div class="article__header"><header><h1>AZURE AD Obtaining OAuth Token</h1></header></div><meta itemprop="headline" content="AZURE AD Obtaining OAuth Token"><div class="article__info clearfix"><ul class="left-col menu"><li>
+<article itemscope itemtype="http://schema.org/Article"><div class="article__header"><header><h1>DistressApp</h1></header></div><meta itemprop="headline" content="DistressApp"><div class="article__info clearfix"><ul class="left-col menu"><li>
               <a class="button button--secondary button--pill button--sm"
-                href="/archive.html?tag=Posts">Posts</a>
+                href="/archive.html?tag=Projects">Projects</a>
             </li><li>
               <a class="button button--secondary button--pill button--sm"
-                href="/archive.html?tag=C%23">C#</a>
+                href="/archive.html?tag=Java">Java</a>
             </li><li>
               <a class="button button--secondary button--pill button--sm"
-                href="/archive.html?tag=Microsoft">Microsoft</a>
-            </li><li>
-              <a class="button button--secondary button--pill button--sm"
-                href="/archive.html?tag=AzureAD">AzureAD</a>
-            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Apr 30, 2022</span>
-            </li></ul></div><meta itemprop="author" content="Pablo Suarez"/><meta itemprop="datePublished" content="2022-04-30T00:00:00+01:00">
-    <meta itemprop="keywords" content="Posts,C#,Microsoft,AzureAD"><div class="js-article-content"><div class="layout--article"><!-- start custom article top snippet -->
+                href="/archive.html?tag=Android">Android</a>
+            </li></ul><ul class="right-col menu"><li><i class="far fa-calendar-alt"></i> <span>Jul 04, 2022</span>
+            </li></ul></div><meta itemprop="author" content="Pablo Suarez"/><meta itemprop="datePublished" content="2022-07-04T00:00:00+01:00">
+    <meta itemprop="keywords" content="Projects,Java,Android"><div class="js-article-content"><div class="layout--article"><!-- start custom article top snippet -->
 
 <!-- end custom article top snippet -->
-<div class="article__content" itemprop="articleBody"><p>How to connect your C# code with Azure AD (Azure Active Directory) application for use as role-based access control.
+<div class="article__content" itemprop="articleBody"><p>Application to send emergency message on button click .
 <!--more--></p>
 
-<p>Here some docs from microsoft:</p>
+<h2 id="the-idea">The idea</h2>
+
+<p>The main idea consists of making a simple android app to send messages in case of emergency.</p>
+
+<p>The base will consist of two parts:</p>
 
 <ul>
-  <li><a href="https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal">How to create a new Azure AD</a></li>
-  <li><a href="https://docs.microsoft.com/en-us/power-platform/admin/manage-application-users">How to manage users in the Power Platform admin center</a></li>
+  <li>An activity to manage the contacts.</li>
+  <li>And the other with a button in charge of triggering the messages.</li>
 </ul>
 
-<p>At this point you should have an Azure AD application with a Client Secret and a powerapps environment with the application user.</p>
+<p>I want to make a useful application using the least internet connection possible, that’s why the messages are sent as sms.</p>
 
-<h3 id="requirements">Requirements</h3>
+<p>When this is part is done i want to keep escalating the project with things like:</p>
+
 <ul>
-  <li><a href="/assets/images/posts/AzureADOAuth/secretid.png">ClientSecret (Azure AD)</a></li>
-  <li><a href="/assets/images/posts/AzureADOAuth/clientid.png">ClientID (Azure AD)</a></li>
-  <li>URL (PowerApps Developer Options)</li>
-  <li><a href="/assets/images/posts/AzureADOAuth/clientid.png">TenantID (Azure AD)</a></li>
+  <li>
+    <p>GPS info.</p>
+  </li>
+  <li>
+    <p>Task to recursive send message a few times,  since the button was pressed.</p>
+  </li>
+  <li>
+    <p>Detecting internally or externally if you were in an accident, focus on a motorcycle.</p>
+  </li>
+  <li>
+    <p>Start recording for both cameras</p>
+  </li>
 </ul>
 
-<blockquote>
-  <p><strong>Be careful with this keys, don’t share or push into your repository this information</strong></p>
-</blockquote>
+<h2 id="licencia">Licencia</h2>
 
-<h3 id="obtaining-oauth-token">Obtaining OAuth Token</h3>
-<p>By using <a href="https://docs.microsoft.com/en-us/dotnet/api/microsoft.identitymodel.clients.activedirectory?view=azure-dotnet">Microsoft.IdentityModel.Clients.ActiveDirectory Namespace</a>  you get an authentication token that you can use to identify your app to access your API without login manually with your credentials.</p>
+<p>GNU General Public License v3.0</p>
 
-<div class="language-c# highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">AuthenticationContext</span> <span class="n">authContext</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">AuthenticationContext</span><span class="p">(</span><span class="s">"https://login.microsoftonline.com/"</span> <span class="p">+</span> <span class="p">&lt;</span><span class="n">TenatID</span><span class="p">&gt;);</span>
-<span class="n">ClientCredential</span> <span class="n">credential</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">ClientCredential</span><span class="p">(&lt;</span><span class="n">ClientID</span><span class="p">,</span> <span class="p">&lt;</span><span class="n">ClientSecret</span><span class="p">&gt;);</span>
-
-<span class="n">AuthenticationResult</span> <span class="n">result</span> <span class="p">=</span> <span class="n">authContext</span><span class="p">.</span><span class="nf">AcquireTokenAsync</span><span class="p">(</span><span class="n">AzureDetails</span><span class="p">.</span><span class="n">url</span><span class="p">,</span> <span class="n">credential</span><span class="p">).</span><span class="n">Result</span><span class="p">;</span>
-<span class="p">});</span>
-</code></pre></div></div>
-
-</div><section class="article__sharing d-print-none"></section><div class="d-print-none"><footer class="article__footer"><meta itemprop="dateModified" content="2022-04-30T00:00:00+01:00"><!-- start custom article footer snippet -->
+</div><section class="article__sharing d-print-none"></section><div class="d-print-none"><footer class="article__footer"><meta itemprop="dateModified" content="2022-07-04T00:00:00+01:00"><!-- start custom article footer snippet -->
 
 <!-- end custom article footer snippet -->
 </footer>
-<div class="article__section-navigator clearfix"><div class="previous"><span>PREVIOUS</span><a href="/posts/2022/03/16/JavaEnvironment.html">How to prepare a Java development environment on Windows</a></div><div class="next"><span>NEXT</span><a href="/projects/2022/07/04/distressapp.html">DistressApp</a></div></div></div>
+<div class="article__section-navigator clearfix"><div class="previous"><span>PREVIOUS</span><a href="/posts/2022/04/30/AzureADOAuth.html">AZURE AD Obtaining OAuth Token</a></div><div class="next"><span>NEXT</span><a href="/posts/2022/08/03/writecommits.html">How to write descent commits</a></div></div></div>
 
 </div>
 
